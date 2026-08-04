@@ -1,0 +1,42 @@
+Disease_Prognosis,Disease_Category,Unique_Symptom_Profiles_Count,Avg_Symptom_Count,Min_Symptom_Count,Max_Symptom_Count,Top_Defining_Symptoms,Total_Symptoms_Identified
+(Vertigo) Paroymsal  Positional Vertigo,General Medical,7,5.14,5,6,"Vomiting, Headache, Nausea",6
+Acne,Dermatological,5,3.2,3,4,"Skin Rash, Pus Filled Pimples, Blackheads",4
+Aids,Infectious / Viral,5,3.2,3,4,"Muscle Wasting, Patches In Throat, High Fever",4
+Alcoholic Hepatitis,Hepatic / Liver,8,6.12,6,7,"Vomiting, Yellowish Skin, Abdominal Pain",7
+Allergy,Immunological / Allergic,5,3.2,3,4,"Continuous Sneezing, Shivering, Chills",4
+Arthritis,Musculoskeletal,6,4.17,4,5,"Muscle Weakness, Stiff Neck, Swelling Joints",5
+Bronchial Asthma,Respiratory,7,5.14,5,6,"Fatigue, Cough, High Fever",6
+Cervical Spondylosis,Musculoskeletal,6,4.17,4,5,"Back Pain, Weakness In Limbs, Neck Pain",5
+Chicken Pox,Infectious / Viral,10,10.1,10,11,"Malaise, Red Spots Over Body, Itching",11
+Chronic Cholestasis,Hepatic / Liver,8,6.12,6,7,"Itching, Vomiting, Yellowish Skin",7
+Common Cold,Respiratory / Viral,9,16.11,16,17,"Phlegm, Muscle Pain, Loss Of Smell",17
+Dengue,Infectious / Viral,10,13.1,13,14,"Nausea, Back Pain, Pain Behind The Eyes",14
+Diabetes,Metabolic / Endocrine,9,9.11,9,10,"Polyuria, Increased Appetite, Weight Loss",10
+Dimorphic Hemorrhoids (Piles),Gastrointestinal,6,4.17,4,5,"Constipation, Pain During Bowel Movements, Pain In Anal Region",5
+Drug Reaction,Immunological / Allergic,6,4.17,4,5,"Itching, Skin Rash, Stomach Pain",5
+Fungal Infection,Infectious / Fungal,5,3.2,3,4,"Itching, Skin Rash, Nodal Skin Eruptions",4
+Gastroenteritis,Gastrointestinal,5,3.2,3,4,"Vomiting, Sunken Eyes, Dehydration",4
+Gerd,Gastrointestinal,7,5.14,5,6,"Stomach Pain, Acidity, Ulcers On Tongue",6
+Heart Attack,Cardiovascular,5,3.2,3,4,"Vomiting, Breathlessness, Sweating",4
+Hepatitis A,Hepatic / Liver,9,10.11,10,11,"Mild Fever, Muscle Pain, Yellowing Of Eyes",11
+Hepatitis B,Hepatic / Liver,9,11.11,11,12,"Yellowing Of Eyes, Malaise, Receiving Blood Transfusion",12
+Hepatitis C,Hepatic / Liver,7,5.14,5,6,"Fatigue, Yellowish Skin, Nausea",6
+Hepatitis D,Hepatic / Liver,10,8.1,8,9,"Joint Pain, Vomiting, Fatigue",9
+Hepatitis E,Hepatic / Liver,9,12.11,12,13,"Stomach Bleeding, Yellowing Of Eyes, Coma",13
+Hypertension,Cardiovascular,6,4.17,4,5,"Headache, Chest Pain, Dizziness",5
+Hyperthyroidism,Metabolic / Endocrine,9,10.11,10,11,"Muscle Weakness, Abnormal Menstruation, Irritability",11
+Hypoglycemia,Metabolic / Endocrine,9,11.11,11,12,"Slurred Speech, Irritability, Palpitations",12
+Hypothyroidism,Metabolic / Endocrine,8,12.12,12,13,"Irritability, Swollen Extremeties, Depression",13
+Impetigo,Dermatological,6,4.17,4,5,"Skin Rash, High Fever, Blister",5
+Jaundice,Hepatic / Liver,9,7.11,7,8,"Itching, Vomiting, Fatigue",8
+Malaria,Infectious / Parasitic,8,7.12,7,8,"Muscle Pain, Chills, High Fever",8
+Migraine,Neurological,10,8.1,8,9,"Acidity, Indigestion, Headache",9
+Osteoarthristis,Musculoskeletal,7,5.14,5,6,"Joint Pain, Neck Pain, Knee Pain",6
+Paralysis (Brain Hemorrhage),Neurological,5,3.2,3,4,"Vomiting, Headache, Weakness Of One Body Side",4
+Peptic Ulcer Disease,Gastrointestinal,7,5.14,5,6,"Vomiting, Indigestion, Loss Of Appetite",6
+Pneumonia,Respiratory / Bacterial,9,10.11,10,11,"Chest Pain, Rusty Sputum, Fast Heart Rate",11
+Psoriasis,Dermatological,7,5.14,5,6,"Skin Rash, Joint Pain, Skin Peeling",6
+Tuberculosis,Respiratory / Bacterial,9,15.11,15,16,"Blood In Sputum, Chest Pain, Phlegm",16
+Typhoid,Infectious / Bacterial,9,10.11,10,11,"Chills, Fatigue, High Fever",11
+Urinary Tract Infection,Renal / Urological,5,3.2,3,4,"Burning Micturition, Bladder Discomfort, Foul Smell Of Urine",4
+Varicose Veins,Cardiovascular,8,6.12,6,7,"Fatigue, Cramps, Bruising",7

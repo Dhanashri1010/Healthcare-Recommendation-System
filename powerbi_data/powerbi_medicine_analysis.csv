@@ -1,0 +1,6 @@
+Drug_Name,Total_Prescriptions,Market_Share_Pct,Avg_Patient_Age,Min_Patient_Age,Max_Patient_Age,Avg_Na_to_K_Ratio,Pct_High_Na_to_K,High_BP_Patients_Count,Normal_BP_Patients_Count,Low_BP_Patients_Count,High_Cholesterol_Patients_Count,Normal_Cholesterol_Patients_Count,Primary_Clinical_Indication
+Drug A,23,11.5,35.9,19,50,10.92,0.0,23,0,0,12,11,High BP & Age <= 50
+Drug B,16,8.0,62.5,51,74,11.52,0.0,16,0,0,8,8,High BP & Age > 50
+Drug C,16,8.0,42.5,16,72,10.63,0.0,0,0,16,16,0,Low BP & High Cholesterol
+Drug X,54,27.0,44.0,15,74,10.65,0.0,0,36,18,20,34,Low/Normal BP & Normal Cholesterol
+Drug Y,91,45.5,43.7,15,74,22.37,100.0,38,23,30,47,44,High Na/K Ratio (> 15.0)

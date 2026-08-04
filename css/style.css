@@ -1,0 +1,219 @@
+/* Streamlit SaaS Clean Minimalist Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+html, body, [class*="st-"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Constrain Container Width to 1200px Centered */
+.block-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 3rem !important;
+}
+
+/* Hide Default Streamlit Elements */
+#MainMenu, footer, header, [data-testid="stHeader"], [data-testid="stToolbar"] {
+    visibility: hidden;
+    height: 0px !important;
+    display: none !important;
+}
+
+/* Base App Wrapper Transitions */
+.stApp {
+    transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+/* ==========================================
+   THEME 1: DARK MODE
+   Background: #0B1120 | Surface: #111827 | Text: #F1F5F9
+   ========================================== */
+.theme-dark .stApp, .stApp[data-theme="dark"] {
+    background-color: #0B1120 !important;
+    color: #F1F5F9 !important;
+}
+
+.theme-dark section[data-testid="stSidebar"] {
+    background-color: #111827 !important;
+    border-right: 1px solid #1E293B !important;
+}
+
+.theme-dark .saas-card, .theme-dark .stForm {
+    background-color: #111827 !important;
+    border: 1px solid #1E293B !important;
+    border-radius: 14px !important;
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+    color: #F1F5F9 !important;
+}
+
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6,
+.theme-dark .stMarkdown, .theme-dark label, .theme-dark span, .theme-dark p {
+    color: #F1F5F9 !important;
+}
+
+.theme-dark .text-muted, .theme-dark .stMarkdown p {
+    color: #94A3B8 !important;
+}
+
+.theme-dark input, .theme-dark select, .theme-dark textarea, 
+.theme-dark div[data-baseweb="select"] > div, .theme-dark div[data-baseweb="input"] {
+    background-color: #1E293B !important;
+    color: #F1F5F9 !important;
+    border-color: #334155 !important;
+    border-radius: 10px !important;
+}
+
+.theme-dark div[data-baseweb="select"] span, .theme-dark div[data-baseweb="tag"] {
+    color: #F1F5F9 !important;
+    background-color: #334155 !important;
+}
+
+.theme-dark div[data-testid="stDataFrame"], .theme-dark table {
+    background-color: #111827 !important;
+    color: #F1F5F9 !important;
+    border: 1px solid #1E293B !important;
+    border-radius: 12px !important;
+}
+
+.theme-dark th, .theme-dark td {
+    background-color: #111827 !important;
+    color: #F1F5F9 !important;
+    border-color: #1E293B !important;
+}
+
+.theme-dark .stButton > button {
+    background-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 10px 24px !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3) !important;
+    transition: all 0.2s ease !important;
+}
+
+.theme-dark .stButton > button:hover {
+    background-color: #2563EB !important;
+    transform: translateY(-1px) !important;
+}
+
+/* ==========================================
+   THEME 2: LIGHT MODE
+   Background: #F8FAFC | Surface: #FFFFFF | Text: #0F172A
+   ========================================== */
+.theme-light .stApp, .stApp[data-theme="light"] {
+    background-color: #F8FAFC !important;
+    color: #0F172A !important;
+}
+
+.theme-light section[data-testid="stSidebar"] {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E2E8F0 !important;
+}
+
+.theme-light .saas-card, .theme-light .stForm {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 14px !important;
+    padding: 20px !important;
+    margin-bottom: 16px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    color: #0F172A !important;
+}
+
+.theme-light h1, .theme-light h2, .theme-light h3, .theme-light h4, .theme-light h5, .theme-light h6,
+.theme-light .stMarkdown, .theme-light label, .theme-light span, .theme-light p {
+    color: #0F172A !important;
+}
+
+.theme-light .text-muted, .theme-light .stMarkdown p {
+    color: #64748B !important;
+}
+
+.theme-light input, .theme-light select, .theme-light textarea, 
+.theme-light div[data-baseweb="select"] > div, .theme-light div[data-baseweb="input"] {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border-color: #CBD5E1 !important;
+    border-radius: 10px !important;
+}
+
+.theme-light div[data-baseweb="select"] span, .theme-light div[data-baseweb="tag"] {
+    color: #0F172A !important;
+    background-color: #F1F5F9 !important;
+}
+
+.theme-light div[data-testid="stDataFrame"], .theme-light table {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+}
+
+.theme-light th, .theme-light td {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    border-color: #E2E8F0 !important;
+}
+
+.theme-light .stButton > button {
+    background-color: #3B82F6 !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 10px 24px !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25) !important;
+    transition: all 0.2s ease !important;
+}
+
+.theme-light .stButton > button:hover {
+    background-color: #2563EB !important;
+    transform: translateY(-1px) !important;
+}
+
+/* ==========================================
+   KPI CARDS STYLING
+   ========================================== */
+.kpi-box {
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid #1E293B;
+    background: #111827;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+.theme-light .kpi-box {
+    background: #FFFFFF;
+    border-color: #E2E8F0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.kpi-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94A3B8;
+}
+
+.theme-light .kpi-title {
+    color: #64748B;
+}
+
+.kpi-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-top: 4px;
+    color: #3B82F6;
+}
+
+.kpi-sub {
+    font-size: 0.75rem;
+    margin-top: 4px;
+    color: #64748B;
+}

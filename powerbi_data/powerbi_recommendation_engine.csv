@@ -1,0 +1,42 @@
+Disease_Prognosis,Disease_Category,Key_Symptoms,Primary_Recommended_Drug,Secondary_Recommended_Drug,Efficacy_Rating_Score,Patient_Satisfaction_Pct,Review_Evidence_Count,Recommendation_Confidence_Score
+(Vertigo) Paroymsal  Positional Vertigo,General Medical,"Vomiting, Headache, Nausea",Drug Y,Drug X,8.5,88.0,150,63.0
+Acne,Dermatological,"Skin Rash, Pus Filled Pimples, Blackheads",Isotretinoin,Adapalene / Benzoyl Peroxide,8.38,85.3,517,90.3
+Aids,Infectious / Viral,"Muscle Wasting, Patches In Throat, High Fever",Drug Y,Drug X,8.5,88.0,150,63.0
+Alcoholic Hepatitis,Hepatic / Liver,"Vomiting, Yellowish Skin, Abdominal Pain",Drug Y,Drug X,8.5,88.0,150,63.0
+Allergy,Immunological / Allergic,"Continuous Sneezing, Shivering, Chills",Drug Y,Drug X,8.5,88.0,150,63.0
+Arthritis,Musculoskeletal,"Muscle Weakness, Stiff Neck, Swelling Joints",Drug Y,Drug X,8.5,88.0,150,63.0
+Bronchial Asthma,Respiratory,"Fatigue, Cough, High Fever",Drug Y,Drug X,8.5,88.0,150,63.0
+Cervical Spondylosis,Musculoskeletal,"Back Pain, Weakness In Limbs, Neck Pain",Drug Y,Drug X,8.5,88.0,150,63.0
+Chicken Pox,Infectious / Viral,"Malaise, Red Spots Over Body, Itching",Drug Y,Drug X,8.5,88.0,150,63.0
+Chronic Cholestasis,Hepatic / Liver,"Itching, Vomiting, Yellowish Skin",Drug Y,Drug X,8.5,88.0,150,63.0
+Common Cold,Respiratory / Viral,"Phlegm, Muscle Pain, Loss Of Smell",Drug Y,Drug X,8.5,88.0,150,63.0
+Dengue,Infectious / Viral,"Nausea, Back Pain, Pain Behind The Eyes",Drug Y,Drug X,8.5,88.0,150,63.0
+Diabetes,Metabolic / Endocrine,"Polyuria, Increased Appetite, Weight Loss",Drug Y,Drug X,8.5,88.0,150,63.0
+Dimorphic Hemorrhoids (Piles),Gastrointestinal,"Constipation, Pain During Bowel Movements, Pain In Anal Region",Drug Y,Drug X,8.5,88.0,150,63.0
+Drug Reaction,Immunological / Allergic,"Itching, Skin Rash, Stomach Pain",Drug Y,Drug X,8.5,88.0,150,63.0
+Fungal Infection,Infectious / Fungal,"Itching, Skin Rash, Nodal Skin Eruptions",Drug Y,Drug X,8.5,88.0,150,63.0
+Gastroenteritis,Gastrointestinal,"Vomiting, Sunken Eyes, Dehydration",Zofran,Ondansetron,9.33,88.9,18,57.4
+Gerd,Gastrointestinal,"Stomach Pain, Acidity, Ulcers On Tongue",Dexlansoprazole,Esomeprazole,6.92,67.1,85,48.3
+Heart Attack,Cardiovascular,"Vomiting, Breathlessness, Sweating",Clopidogrel,Plavix,7.91,81.8,22,49.2
+Hepatitis A,Hepatic / Liver,"Mild Fever, Muscle Pain, Yellowing Of Eyes",Drug Y,Drug X,8.5,88.0,150,63.0
+Hepatitis B,Hepatic / Liver,"Yellowing Of Eyes, Malaise, Receiving Blood Transfusion",Viread,Tenofovir,7.5,50.0,6,45.5
+Hepatitis C,Hepatic / Liver,"Fatigue, Yellowish Skin, Nausea",Harvoni,Ledipasvir / Sofosbuvir,8.67,85.4,198,67.9
+Hepatitis D,Hepatic / Liver,"Joint Pain, Vomiting, Fatigue",Drug Y,Drug X,8.5,88.0,150,63.0
+Hepatitis E,Hepatic / Liver,"Stomach Bleeding, Yellowing Of Eyes, Coma",Drug Y,Drug X,8.5,88.0,150,63.0
+Hypertension,Cardiovascular,"Headache, Chest Pain, Dizziness",Drug Y,Drug X,8.5,88.0,150,63.0
+Hyperthyroidism,Metabolic / Endocrine,"Muscle Weakness, Abnormal Menstruation, Irritability",Methimazole,N/A,7.0,66.7,9,42.7
+Hypoglycemia,Metabolic / Endocrine,"Slurred Speech, Irritability, Palpitations",Drug Y,Drug X,8.5,88.0,150,63.0
+Hypothyroidism,Metabolic / Endocrine,"Irritability, Swollen Extremeties, Depression",Drug Y,Drug X,8.5,88.0,150,63.0
+Impetigo,Dermatological,"Skin Rash, High Fever, Blister",Drug Y,Drug X,8.5,88.0,150,63.0
+Jaundice,Hepatic / Liver,"Itching, Vomiting, Fatigue",Drug Y,Drug X,8.5,88.0,150,63.0
+Malaria,Infectious / Parasitic,"Muscle Pain, Chills, High Fever",Drug Y,Drug X,8.5,88.0,150,63.0
+Migraine,Neurological,"Acidity, Indigestion, Headache",Sumatriptan,Rizatriptan,7.95,77.5,213,64.7
+Osteoarthristis,Musculoskeletal,"Joint Pain, Neck Pain, Knee Pain",Drug Y,Drug X,8.5,88.0,150,63.0
+Paralysis (Brain Hemorrhage),Neurological,"Vomiting, Headache, Weakness Of One Body Side",Drug Y,Drug X,8.5,88.0,150,63.0
+Peptic Ulcer Disease,Gastrointestinal,"Vomiting, Indigestion, Loss Of Appetite",Drug Y,Drug X,8.5,88.0,150,63.0
+Pneumonia,Respiratory / Bacterial,"Chest Pain, Rusty Sputum, Fast Heart Rate",Levofloxacin,Levaquin,5.1,43.3,67,36.0
+Psoriasis,Dermatological,"Skin Rash, Joint Pain, Skin Peeling",Ustekinumab,Stelara,8.33,85.1,67,55.3
+Tuberculosis,Respiratory / Bacterial,"Blood In Sputum, Chest Pain, Phlegm",Drug Y,Drug X,8.5,88.0,150,63.0
+Typhoid,Infectious / Bacterial,"Chills, Fatigue, High Fever",Drug Y,Drug X,8.5,88.0,150,63.0
+Urinary Tract Infection,Renal / Urological,"Burning Micturition, Bladder Discomfort, Foul Smell Of Urine",Nitrofurantoin,Sulfamethoxazole / Trimethoprim,4.82,39.9,318,54.4
+Varicose Veins,Cardiovascular,"Fatigue, Cramps, Bruising",Drug Y,Drug X,8.5,88.0,150,63.0
