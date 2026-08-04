@@ -27,6 +27,8 @@ def get_theme_css(theme="dark"):
     css = f"""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
     :root {{
         --bg-main: {bg_main};
@@ -42,8 +44,16 @@ def get_theme_css(theme="dark"):
         --card-shadow: {card_shadow};
     }}
 
-    html, body, [class*="st-"] {{
+    html, body, [class*="st-"]:not([class*="icon"]):not([class*="Icon"]):not(button) {{
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    }}
+
+    /* Reset font-family for Material Icons in password inputs so they render as icons, not text */
+    button[aria-label="Show password"] *,
+    button[aria-label="Hide password"] *,
+    button[aria-label="show password"] *,
+    button[aria-label="hide password"] * {{
+        font-family: 'Material Symbols Outlined', 'Material Icons', sans-serif !important;
     }}
 
     /* Main Container Padding & Width - Up to 1400px, tight left margin */

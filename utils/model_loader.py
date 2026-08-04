@@ -12,13 +12,18 @@ import streamlit as st
 from recommend_medicine import MedicineRecommender
 
 MODELS_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models')
+os.makedirs(MODELS_DIR, exist_ok=True)
 
 @st.cache_resource
 def load_disease_model():
-    """Loads disease prediction ML model and label encoder."""
+    """Loads disease prediction ML model and label encoder with auto-train fallback."""
     model_path = os.path.join(MODELS_DIR, 'disease_prediction_model.pkl')
     label_path = os.path.join(MODELS_DIR, 'disease_label_encoder.pkl')
     feature_path = os.path.join(MODELS_DIR, 'symptom_features.pkl')
+
+    if not (os.path.exists(model_path) and os.path.exists(label_path) and os.path.exists(feature_path)):
+        # Auto-train disease prediction model on the fly
+        import train_disease_model
 
     with open(model_path, 'rb') as f:
         model = pickle.load(f)
@@ -33,17 +38,25 @@ def load_disease_model():
 
 @st.cache_resource
 def load_recommender():
-    """Loads TF-IDF Content-Based Medicine Recommender."""
+    """Loads TF-IDF Content-Based Medicine Recommender with auto-build fallback."""
     recommender_path = os.path.join(MODELS_DIR, 'medicine_recommender.pkl')
+
+    if not os.path.exists(recommender_path):
+        # Auto-build medicine recommender pickle on the fly
+        import build_recommender_pickle
+
     with open(recommender_path, 'rb') as f:
         recommender = pickle.load(f)
     return recommender
 
 @st.cache_resource
 def load_sentiment_classifier():
-    """Loads NLTK & Scikit-learn Sentiment Classifier."""
+    """Loads NLTK & Scikit-learn Sentiment Classifier with auto-train fallback."""
     clf_path = os.path.join(MODELS_DIR, 'sentiment_classifier.pkl')
     tfidf_path = os.path.join(MODELS_DIR, 'sentiment_tfidf_vectorizer.pkl')
+
+    if not (os.path.exists(clf_path) and os.path.exists(tfidf_path)):
+        import sentiment_analysis
 
     with open(clf_path, 'rb') as f:
         clf = pickle.load(f)

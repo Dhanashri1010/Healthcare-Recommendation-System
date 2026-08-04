@@ -16,12 +16,11 @@ frontend/dist/
 node_modules/
 dist/
 
-# Large model binaries & compressed archives
-models/*.pkl
+# Compressed archives
 *.zip
 *.tar.gz
 *.rar
 
-# Operating system files & local DBs
+# Operating system files
 .DS_Store
 Thumbs.db
