@@ -48,7 +48,9 @@ def get_theme_css(theme="dark"):
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
     }}
 
-    /* Reset font-family for Material Icons in password inputs so they render as icons, not text */
+    /* Reset font-family for all Streamlit Material Icons so they render as icons, not text */
+    [data-testid="stIconMaterial"],
+    [data-testid="stIconMaterial"] *,
     button[aria-label="Show password"] *,
     button[aria-label="Hide password"] *,
     button[aria-label="show password"] *,
