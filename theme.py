@@ -44,18 +44,69 @@ def get_theme_css(theme="dark"):
         --card-shadow: {card_shadow};
     }}
 
-    html, body, [class*="st-"]:not([class*="icon"]):not([class*="Icon"]):not(button) {{
+    html, body, p, span, label, input, select, textarea, h1, h2, h3, h4, h5, h6, .stMarkdown, [data-testid="stMarkdownContainer"] p {{
         font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
     }}
 
     /* Reset font-family for all Streamlit Material Icons so they render as icons, not text */
     [data-testid="stIconMaterial"],
     [data-testid="stIconMaterial"] *,
-    button[aria-label="Show password"] *,
-    button[aria-label="Hide password"] *,
-    button[aria-label="show password"] *,
-    button[aria-label="hide password"] * {{
+    [data-testid="stExpanderToggleIcon"],
+    [data-testid="stExpanderToggleIcon"] * {{
         font-family: 'Material Symbols Outlined', 'Material Icons', sans-serif !important;
+    }}
+
+    /* ==========================================
+       PASSWORD INPUT EYE ICON SVG FIX
+       ========================================== */
+    /* Hide default text/icons inside password visibility toggle buttons */
+    div[data-testid="stTextInputRootElement"] button[aria-label*="password"] *,
+    div[data-testid="stTextInputRootElement"] button[aria-label*="Password"] * {{
+        font-size: 0 !important;
+        visibility: hidden !important;
+        display: none !important;
+    }}
+
+    /* Style the button container for background image */
+    div[data-testid="stTextInputRootElement"] button[aria-label*="password"],
+    div[data-testid="stTextInputRootElement"] button[aria-label*="Password"] {{
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        position: relative !important;
+        width: 32px !important;
+        height: 32px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 0 !important;
+    }}
+
+    /* Inject eye and hide eye SVG icons using pseudo-elements */
+    div[data-testid="stTextInputRootElement"] button[aria-label="Show password"]::before,
+    div[data-testid="stTextInputRootElement"] button[aria-label="show password"]::before {{
+        content: "" !important;
+        width: 20px !important;
+        height: 20px !important;
+        display: inline-block !important;
+        visibility: visible !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394A3B8' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z'/%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z'/%3E%3C/svg%3E") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
+    }}
+
+    div[data-testid="stTextInputRootElement"] button[aria-label="Hide password"]::before,
+    div[data-testid="stTextInputRootElement"] button[aria-label="hide password"]::before {{
+        content: "" !important;
+        width: 20px !important;
+        height: 20px !important;
+        display: inline-block !important;
+        visibility: visible !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394A3B8' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88'/%3E%3C/svg%3E") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-size: contain !important;
     }}
 
     /* Main Container Padding & Width - Up to 1400px, tight left margin */
